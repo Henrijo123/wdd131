@@ -1,0 +1,38 @@
+.content {
+    margin: 0;
+    padding: 1rem;
+    grid-column: span 4;
+    background-color: beige;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.aside {
+    padding: 1rem;
+    background-color: white;
+}
+
+.general {
+    margin: 0;
+    height: 400px;
+    padding: 1rem;
+    background-color: grey;
+}
+
+footer {
+    justify-items: center;
+    padding: 1rem;
+    background-color: beige;
+}
