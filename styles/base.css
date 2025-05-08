@@ -90,7 +90,7 @@ img {
 figure {
     justify-items: center;
     align-content: center;
-    font-size: .6em;
+    font-size: .7em;
     font-style: italic;
 }
 
@@ -129,5 +129,5 @@ footer {
 
 #lastModified {
     font-size: .9em;
-    color: #A2E3C4;
+    color: #cff8e4;
 }
