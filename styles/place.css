@@ -153,10 +153,6 @@ footer {
         margin: 0 2rem 4rem 0;
     }
 
-    .cls-1 {
-        display: none;
-    }
-
     .table {
         display: grid;
         background-color: var(--yellow-color);
