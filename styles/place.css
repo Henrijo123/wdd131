@@ -183,7 +183,8 @@ footer {
         grid-template-rows: 70px;
     }
 
-    .weather h2 {
+    .weather h2::after {
+        content: url(http://www.w3.org/2000/svg);
         grid-row: 1;
         grid-column: 1/2;
     }
