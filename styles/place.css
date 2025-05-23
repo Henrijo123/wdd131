@@ -86,6 +86,10 @@ h2 {
     grid-row: 2;
 }
 
+.cls-1 {
+    display: none;
+}
+
 .highlight {
     color: rgb(255, 255, 255);
 }
