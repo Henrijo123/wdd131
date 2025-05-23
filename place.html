@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="W03 Place activitiy sample">
+    <meta name="author" content="Henri Joel Gonzalez Gonzalez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place | Henri Joel Gonzalez Gonzalez</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Uruguay</h1>
+
+        </header>
+        <main>
+            <div class="line"></div>
+            <picture class="hero">
+                <source srcset="/images/hero-medium.webp" media="(min-width: 540px)">
+                <img src="/images/uruguay-small.webp" alt="Uruguay picture">
+            </picture>
+            <div class=" content">
+                <div class="first table">
+                    <h2 class="data">Data</h2>
+                    <ul class="index2">
+                        <li>Area:
+                        </li>
+                        <li>Population:
+                        </li>
+                        <li>Capital:
+                        </li>
+                        <li>Languages:
+                        </li>
+                        <li>Currency:
+                        </li>
+                        <li>Time Zone:
+                        </li>
+                        <li>Calling code:
+                        </li>
+                        <li>InternetTLD:
+                        </li>
+                    </ul>
+                    <ul class="information2">
+                        <li>176,215 km²</li>
+                        <li>3.5 million</li>
+                        <li>Montevideo</li>
+                        <li>Spanish</li>
+                        <li>Uruguayan Peso</li>
+                        <li>UTC -3</li>
+                        <li>+598</li>
+                        <li>.uy</li>
+                    </ul>
+                </div>
+                <div class="logo second">
+                    <div class="weather">
+                        <h2>Weather</h2>
+                        <svg fill="currentColor" class="icon" height="70" id="icon" viewBox="0 0 32 32" width="70"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        display: none;
+                                    }
+                                </style>
+                            </defs>
+                            <title />
+                            <rect height="2" width="4" x="27" y="15" />
+                            <rect height="1.9998" transform="translate(2.5791 19.8139) rotate(-45)" width="4.2426"
+                                x="23.0857" y="5.7938" />
+                            <rect height="4" width="2" x="15" y="1" />
+                            <rect height="1.9998" transform="translate(-15.8349 12.1865) rotate(-45)" width="4.2426"
+                                x="4.6716" y="24.2078" />
+                            <rect height="4.2426" transform="translate(-2.8142 6.7932) rotate(-45)" width="1.9998"
+                                x="5.7931" y="4.6723" />
+                            <rect height="2" width="4" x="1" y="15" />
+                            <path
+                                d="M26.7939,20.3418a6.9617,6.9617,0,0,0-1.8681-3.2671A8.485,8.485,0,0,0,25,16a9,9,0,1,0-14.585,7.0332A4.9771,4.9771,0,0,0,15,30H25a4.9947,4.9947,0,0,0,1.7939-9.6582ZM9,16a6.9955,6.9955,0,0,1,13.9849-.2969A6.8883,6.8883,0,0,0,20,15a7.04,7.04,0,0,0-6.7944,5.3418A4.986,4.986,0,0,0,11.5618,21.39,6.9675,6.9675,0,0,1,9,16ZM25,28H15a2.9945,2.9945,0,0,1-.6963-5.9082l.6587-.1572.0986-.67a4.9923,4.9923,0,0,1,9.878,0l.0986.6695.6587.1572A2.9945,2.9945,0,0,1,25,28Z" />
+                            <rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32"
+                                id="_Transparent_Rectangle_" width="32" />
+                        </svg>
+                    </div>
+                    <ul class="index">
+                        <li>Temperature:
+                        </li>
+                        <li>Conditions:
+                        </li>
+                        <li>Wind:
+                        </li>
+                        <li>Wind Chill:
+                        </li>
+                    </ul>
+                    <ul class="information">
+                        <li id="degrees">12°C</li>
+                        <li>Partly Cloudy</li>
+                        <li id="wind">10 km/h</li>
+                        <li id="chill-wind"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="highlight">
+        <p><span id="currentyear"></span>| Henri Joel Gonzalez Gonzalez | Uruguay</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
