@@ -1,0 +1,48 @@
+@media screen and (min-width: 540px) {
+    .navigation a {
+        text-align: center;
+    }
+
+    div {
+        align-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        justify-self: center;
+        max-width: 1200px;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    .text {
+        display: block;
+    }
+
+    .container {
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+}
