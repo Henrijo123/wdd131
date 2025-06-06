@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Best Practices Example</title>
+    <meta name="author" content="Henri Joel Gonzalez Gonzalez">
+    <meta name="description" content="form simple page to practice form standars">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label class="title">Product Name
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+                <label class="title">Overall Rating
+                    <div class="rate">
+                        <label class="options">&star;<input type="radio" name="rating" required></label>
+                        <label class="options">&star;&star;<input type="radio" name="rating"></label>
+                        <label class="options">&star;&star;&star;<input type="radio" name="rating"></label>
+                        <label class="options">&star;&star;&star;&star;<input type="radio" name="rating"></label>
+                        <label class="options">&star;&star;&star;&star;&star;<input type="radio" name="rating"></label>
+                    </div>
+                </label>
+                <label class="title">Date of Installation<input type="date" name="installation" id="installation"
+                        required></label>
+                <label class="title">Wich features did you find useful in the product? <p class="text">(check all that apply)</p>
+                </label>
+                <label class="textBox"><input type="checkbox" name="durability" id="durability"
+                        value="durability">Durability</label>
+                <label class="textBox"><input type="checkbox" name="Use" id="Use" value="Use">Ease of Use</label>
+                <label class="textBox"><input type="checkbox" name="performance" id="performance"
+                        value="performance">Performance</label>
+                <label class="textBox"><input type="checkbox" name="design" id="design" value="design">Design</label>
+                <label class="title">Written Review<textarea name="review" id="review"></textarea></label>
+                <label class="title">User Name <input type="text" id="userName" name="userName"></label>
+                <input type="submit" name="postReview" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer class="highlight">
+        <p><span id="currentyear"></span>| Henri Joel Gonzalez Gonzalez | Uruguay</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
