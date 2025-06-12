@@ -117,9 +117,22 @@ main div {
 }
 
 .filter {
+    font-size: 1.4em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.filter a {
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: var(--title-color);
+}
+
+.filter a:hover {
+    background-color: var(--title-color);
+    color: var(--menu-color);
 }
 
 .example figure {
@@ -219,7 +232,12 @@ input {
     padding: .5rem;
 }
 
+form {
+    width: 400px;
+}
+
 iframe {
+    margin: 1rem;
     justify-self: center;
     width: 350px;
     padding: 1rem;
@@ -227,11 +245,21 @@ iframe {
     border-radius: 25px;
 }
 
+input[type="submit"] {
+    width: 100%;
+}
+
 @media screen and (min-width: 540px) {
     .navigation {
         display: flex;
         text-align: center;
     }
+
+    form {
+        width: 600px;
+    }
+
+
 
     .example div {
         display: flex;

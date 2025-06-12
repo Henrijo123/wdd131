@@ -112,8 +112,8 @@ const products = [
     }
 ]
 
-const allLink = document.querySelector("#all")
-const toysLink = document.querySelector("#toys")
+const allLink = document.querySelector("#All")
+const toysLink = document.querySelector("#Toys")
 const diapersLink = document.querySelector("#Diapers")
 const clothesLink = document.querySelector("#Clothes")
 const accessoriesLink = document.querySelector("#Accessories")
@@ -126,27 +126,62 @@ function productTemplate(product) {
 }
 
 function displayProducts(filteredProducts) {
-    const html = filteredProducts.map(productTemplate)
-    document.querySelector(".products").innerHTML = html.join("");
+    const container = document.querySelector(".products")
+    if (container) {
+        const html = filteredProducts.map(productTemplate)
+        container.innerHTML = html.join("");
+    }
 }
 
-toysLink.addEventListener("click", () => {
-    displayProducts(products.filter(product => (product.productType.includes("toy"))));
-})
-diapersLink.addEventListener("click", () => {
-    displayProducts(products.filter(product => (product.productType.includes("diaper"))));
-})
-clothesLink.addEventListener("click", () => {
-    displayProducts(products.filter(product => (product.productType.includes("clothes"))));
-})
-accessoriesLink.addEventListener("click", () => {
-    displayProducts(products.filter(product => (product.productType.includes("accessory"))));
-})
-careLink.addEventListener("click", () => {
-    displayProducts(products.filter(product => (product.productType.includes("home&care"))));
-})
-allLink.addEventListener("click", () => {
-    displayProducts(products);
-})
+if (toysLink) {
+    toysLink.addEventListener("click", () => {
+        displayProducts(products.filter(product => (product.productType.includes("toy"))));
+        localStorage.setItem("selectedFilter", "toy")
+    })
+}
+if (diapersLink) {
+    diapersLink.addEventListener("click", () => {
+        displayProducts(products.filter(product => (product.productType.includes("diaper"))));
+        localStorage.setItem("selectedFilter", "diaper")
+    })
+}
 
-displayProducts(products)
+if (clothesLink) {
+    clothesLink.addEventListener("click", () => {
+        displayProducts(products.filter(product => (product.productType.includes("clothes"))));
+        localStorage.setItem("selectedFilter", "clothes")
+    })
+}
+
+if (accessoriesLink) {
+    accessoriesLink.addEventListener("click", () => {
+        displayProducts(products.filter(product => (product.productType.includes("accessory"))));
+        localStorage.setItem("selectedFilter", "accessory")
+    })
+}
+
+if (careLink) {
+    careLink.addEventListener("click", () => {
+        displayProducts(products.filter(product => (product.productType.includes("home&care"))));
+        localStorage.setItem("selectedFilter", "home&care")
+    })
+}
+
+if (allLink) {
+    allLink.addEventListener("click", () => {
+        displayProducts(products);
+        localStorage.setItem("selectedFilter", "all")
+    })
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const savedFilter = localStorage.getItem("selectedFilter")
+
+    if (savedFilter && savedFilter !== "all") {
+        const filtered = products.filter(product => product.productType.includes(savedFilter))
+        displayProducts(filtered)
+    }
+    else {
+        displayProducts(products)
+    }
+});
